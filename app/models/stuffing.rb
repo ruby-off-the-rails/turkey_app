@@ -1,0 +1,2 @@
+class Stuffing < ApplicationRecord
+end

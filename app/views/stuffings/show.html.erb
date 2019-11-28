@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @stuffing.color %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @stuffing.weight %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @stuffing.description %>
+</p>
+
+<p>
+  <strong>Flavor:</strong>
+  <%= @stuffing.flavor %>
+</p>
+
+<%= link_to 'Edit', edit_stuffing_path(@stuffing) %> |
+<%= link_to 'Back', stuffings_path %>

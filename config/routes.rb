@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :stuffings
   # EXAMPLE HTML ROUTE
   # get "/photos" => "photos#index"
 

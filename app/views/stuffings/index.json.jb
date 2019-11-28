@@ -1,0 +1,10 @@
+@stuffings.map do |stuffing|
+  {
+    id: stuffing.id,
+    color: stuffing.color,
+    weight: stuffing.weight,
+    description: stuffing.description,
+    flavor: stuffing.flavor,
+    url: stuffing_url(stuffing, format: :json)
+  }
+end

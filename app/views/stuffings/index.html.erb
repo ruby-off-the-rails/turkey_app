@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Stuffings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Color</th>
+      <th>Weight</th>
+      <th>Description</th>
+      <th>Flavor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @stuffings.each do |stuffing| %>
+      <tr>
+        <td><%= stuffing.color %></td>
+        <td><%= stuffing.weight %></td>
+        <td><%= stuffing.description %></td>
+        <td><%= stuffing.flavor %></td>
+        <td><%= link_to 'Show', stuffing %></td>
+        <td><%= link_to 'Edit', edit_stuffing_path(stuffing) %></td>
+        <td><%= link_to 'Destroy', stuffing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Stuffing', new_stuffing_path %>

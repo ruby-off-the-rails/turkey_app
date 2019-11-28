@@ -1,0 +1,9 @@
+{
+  id: @stuffing.id,
+  color: @stuffing.color,
+  weight: @stuffing.weight,
+  description: @stuffing.description,
+  flavor: @stuffing.flavor,
+  created_at: @stuffing.created_at,
+  updated_at: @stuffing.updated_at
+}
